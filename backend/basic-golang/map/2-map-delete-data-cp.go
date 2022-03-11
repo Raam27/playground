@@ -44,7 +44,6 @@ func main() {
 	//endanswer
 
 	// Output setelah dihapus
-
 	/*
 		map[name:Socrates]
 		map[name:Plato]
