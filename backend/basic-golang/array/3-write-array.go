@@ -10,4 +10,7 @@ func main() {
 	array[0] = 1
 	array[1] = 2
 	fmt.Println(array) // output: [1 2 0 0 0 0 0 0 0 0]
+	// nah kita juga bisa memodifikasi array pada index tersebut.
+	array[0] = -3
+	fmt.Println(array) // output: [-3 2 0 0 0 0 0 0 0 0]
 }
