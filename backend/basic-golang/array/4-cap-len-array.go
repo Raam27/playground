@@ -23,5 +23,5 @@ func main() {
 	// Coba kita isi slice tersebut
 	array3 = append(array3, 1, 2, 3, 4, 5, 6, 7)
 	fmt.Println(len(array3), cap(array3)) // Output: 7, 8
-	// Kok kita gk bisa masukin data dengan cara array3[0] = 1 ya ? Nah akan dijelaskan di materi slice ya.
+	// Kok kita gk bisa masukin data dengan cara  array3[0] = 1 ya ? Nah akan dijelaskan di materi slice ya.
 }
