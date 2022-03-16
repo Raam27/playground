@@ -7,30 +7,42 @@ import (
 
 // Check Point:
 // Two Dimention Area
-// - Input: Nilai Pertama, Nilai Kedua
+// - Input: Select Choice
 // - Output: Result Operation
 
 // Contoh:
 // Input:
-// - Masukkan nilai pertama: 10
-// - Masukkan nilai pertama: 5
-// 1: Addition (+)
-// 2: Subtraction (-)
-// 3: Multiplication (*)
-// 4: Division (/)
-// - Enter choice: 2
+// 1: Rectange Area
+// 2: Rectangular Area
+// 3: Triangle Area
+// 4: Circle Area
+// - Enter choice 1, 2, 3, or 4: 1 | 2 | 3 | 4
+//   - (1) Rectange Area
+//   	- Masukkan sisi : 5
+//   - (2) Rectangular Area
+// 		- Masukkan panjang : 5
+// 		- Masukkan lebar : 10
+// 	 - (3) Triangle Area
+// 		- Masukkan panjang alas segitiga: 5
+// 		- Masukkan tinggi segitiga: 10
+// 	 - (4) Circle Area
+//      - Masukkan jari-jari : 4
+
 // Output:
-// - Subtraction is: 5
+// - (1) Luas Persegi adalah : 25
+// - (2) Luas Persegi Panjang adalah : 50
+// - (3) Luas Segitiga adalah : 25
+// - (4) Luas Lingkaran adalah : 50.240000
 
 func main() {
 	//beginanswer
 	var choice int = 0
 	var result float32
 	fmt.Println("1: Rectange Area")
-	fmt.Println("2: Rectangular")
-	fmt.Println("3: Triangle")
-	fmt.Println("4: Circle")
-	fmt.Print("Enter choice: ")
+	fmt.Println("2: Rectangular Area")
+	fmt.Println("3: Triangle Area")
+	fmt.Println("4: Circle Area")
+	fmt.Print("Enter choice 1, 2, 3, or 4: ")
 	fmt.Scan(&choice)
 
 	switch choice {
@@ -47,22 +59,22 @@ func main() {
 		fmt.Printf("Masukkan lebar : ")
 		fmt.Scan(&wide)
 		result = length * wide
-		fmt.Printf("Luas Persegi adalah : %f", result)
+		fmt.Printf("Luas Persegi Panjang adalah : %f", result)
 	case 3:
 		var a, t float32
-		fmt.Print("Masukkan panjang alas segitga: ")
-		fmt.Scanln(&a)
+		fmt.Print("Masukkan panjang alas segitiga: ")
+		fmt.Scan(&a)
 		fmt.Print("Masukkan tinggi segitiga: ")
-		fmt.Scanln(&t)
+		fmt.Scan(&t)
 		result = 0.5 * a * t
-		fmt.Println("Luas segitiga adalah", result)
+		fmt.Println("Luas Segitiga adalah", result)
 	case 4:
 		var r, res float64
 		const pi float64 = 3.14
 		fmt.Printf("Masukkan jari-jari : ")
 		fmt.Scan(&r)
 		res = pi * (math.Pow(r, 2))
-		fmt.Printf("Jadi luasnya adalah : %f", res)
+		fmt.Printf("Luas Lingkaran adalah : %f", res)
 	default:
 		fmt.Println("Invalid value")
 	}

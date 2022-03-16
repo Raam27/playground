@@ -5,7 +5,7 @@ import "fmt"
 // Demo:
 // Sum Average
 // Input
-//    - Jumlah Angka: angka
+//    - Jumlah Anggka: angka
 //    - Angka ke-1: Angka ke-2: angka angka ...
 // Output
 // 	  - Angka ke-3: Angka ke-[i]: Angka ke-[i] ... Jumlah: [Jumlah Angka]
