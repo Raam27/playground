@@ -5,11 +5,11 @@
 - Please explain step by step, slowly
   - Start from zero code and iteratively add the solution
 
-[![Introduction Video](https://img.youtube.com/vi/aqks78z2nSw/sddefault.jpg)](https://youtu.be/aqks78z2nSw)
+[![Introduction Video](https://img.youtube.com/vi/aqks78z2nSw/maxresdefault.jpg)](https://youtu.be/aqks78z2nSw)
 
 ## First challenge: Katla Engine
 
-[![Katla Engine](https://img.youtube.com/vi/h3kcr8CTMNo/sddefault.jpg)](https://youtu.be/h3kcr8CTMNo)
+[![Katla Engine](https://img.youtube.com/vi/h3kcr8CTMNo/maxresdefault.jpg)](https://youtu.be/h3kcr8CTMNo)
 
 - This problem is meant for tutorial, please explain the step by step solution to the students
 - `engine/main.go` is CLI based Katla Engine
@@ -25,7 +25,7 @@
 ## Second challenge: Katla Solver
 
 <!-- beginanswer -->
-[![Katla Solver](https://img.youtube.com/vi/rxTP1tpINT4/sddefault.jpg)](https://youtu.be/rxTP1tpINT4)
+[![Katla Solver](https://img.youtube.com/vi/rxTP1tpINT4/maxresdefault.jpg)](https://youtu.be/rxTP1tpINT4)
 <!-- endanswer -->
 
 - This problem is meant for challenge, let the students try themselves first
