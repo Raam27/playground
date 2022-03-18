@@ -5,7 +5,6 @@
 - Please watch the following video:
 [![Introduction Video](https://img.youtube.com/vi/aqks78z2nSw/maxresdefault.jpg)](https://youtu.be/aqks78z2nSw)
 <!-- endanswer nop -->
-p
 - Please try this first: <https://katla.vercel.app/arsip>
 - [Important] Give students chance to try themselves until they really understand the game rule
 - Please explain step by step, slowly
