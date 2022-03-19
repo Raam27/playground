@@ -3,6 +3,7 @@
 <!-- beginanswer -->
 
 - Please watch the following Guide Video:
+
 [![Guide Hackerrank Video](https://s3.amazonaws.com/sr-marketplace-prod/wp-content/uploads/2015/08/hackerrank.jpg)](https://www.youtube.com/watch?v=ng1wp92-ED0)
 <!-- endanswer nop -->
 
