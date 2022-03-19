@@ -4,7 +4,7 @@
 
 - Please watch the following Guide Video:
 
-[![Guide Hackerrank Video](https://s3.amazonaws.com/sr-marketplace-prod/wp-content/uploads/2015/08/hackerrank.jpg)](https://www.youtube.com/watch?v=ng1wp92-ED0)
+  [![Guide Hackerrank Video](https://s3.amazonaws.com/sr-marketplace-prod/wp-content/uploads/2015/08/hackerrank.jpg)](https://www.youtube.com/watch?v=ng1wp92-ED0)
 <!-- endanswer nop -->
 
 <!-- beginanswer -->
@@ -24,7 +24,7 @@ Untuk tugas ini tidak wajib di kumpulkan hanya dibahas di sesi Lecture, namun **
 - Discussion and Presentation
 
 
-## Lecture:
+## Basic:
 - Problem 1: [Compare the Triplet Problem](compare-the-triplets/main.go)
 - Problem 2: [A Very Big Sum](very-big-sum/main.go)
 - Problem 3: [Diagonal Difference](diagonal-differencer/main.go)
@@ -33,3 +33,11 @@ Untuk tugas ini tidak wajib di kumpulkan hanya dibahas di sesi Lecture, namun **
 - Problem 6: [Birthday Cake Candles](birthday-cake-candles/main.go)
 - Problem 7: [Number Line Jumps](number-line-jumps/main.go)
 - Problem 8: [Apple & Orrage](apple-and-orange/main.go)
+
+## Intermediate:
+- Problem 1: [Pairs](pairs/main.go)
+- Problem 2: [The time in Words](the-time-in-words/main.go)
+- Problem 3: [Encryption](encryption/main.go)
+- Problem 4: [Recursive Digit Sum](recursive-digit-sum/main.go)
+- Problem 5: [Counter Game](counter-game/main.go)
+- Problem 6: [Sherlock and Valid String](sherlock-and-valid-string/main.go)
