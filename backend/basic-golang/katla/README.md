@@ -1,5 +1,16 @@
 # Katla
 
+- <https://katla.vercel.app/> is a popular word guessing game
+- Here we learn how to make simple version using Go
+- We also learn how to develop simple algorithm to solve the game
+- This project is for education purpose only, to understand:
+  - Loop
+  - Array/Slice
+  - If else condition
+  - Problem solving technique
+
+---
+
 <!-- beginanswer -->
 
 - Please watch the following video:
