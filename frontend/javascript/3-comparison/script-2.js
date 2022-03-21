@@ -3,7 +3,7 @@
 // Masukan suatu angka
 const number = parseInt(prompt("Masukan bilangan: "));
 
-// begin answer
+// beginanswer
 switch (number) {
     case (number < 0):
         console.log("bilangan negatif");
@@ -17,4 +17,4 @@ switch (number) {
     default:
         break;
 }
-// end answer
+// endanswer
