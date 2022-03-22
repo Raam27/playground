@@ -40,7 +40,7 @@ func main() {
 	_, err := IsEligibleToVaccine(data, "Tony")
 	if err != nil {
 		// Cek apakah err merupakan jenis error ErrDataNotFound
-		//startanswer
+		//beginanswer
 		if errors.Is(err, ErrDataNotFound) {
 			fmt.Println("err adalah ErrDataNotFound")
 		}
