@@ -15,15 +15,15 @@ function checkPalindrome(string) {
 
     for (let i = 0; i < len / 2; i++) {
         if (string[i] !== string[len - 1 - i]) {
-            return 'It is not a palindrome';
+            return 'Bukan palindrom';
         }
     }
-    return 'It is a palindrome';
+    return 'Palindrom';
     // endanswer
 }
 
 // masukan teks
-const string = prompt('Enter a string: ');
+const string = prompt('Masukan string: ');
 
 // memanggil fungsi palindrom
 const value = checkPalindrome(string);

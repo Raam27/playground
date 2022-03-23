@@ -15,7 +15,6 @@ function reverseString(str) {
     // endanswer
 }
 
-// take input from the user
 const string = prompt('Masukan teks: ');
 
 const result = reverseString(string);
