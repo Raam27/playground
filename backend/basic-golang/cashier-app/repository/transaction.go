@@ -8,14 +8,14 @@ func NewTransactionRepository(cartItemRepository CartItemRepository) Transaction
 	return TransactionRepository{cartItemRepository}
 }
 
-func (u *TransactionRepository) Pay(amout int) (int, error) {
+func (u *TransactionRepository) Pay(amount int) (int, error) {
 	//beginanswer
 	totalPrice, err := u.cartItemRepository.TotalPrice()
 	if err != nil {
 		return 0, err
 	}
 
-	moneyChanges := amout - totalPrice
+	moneyChanges := amount - totalPrice
 	return moneyChanges, nil
 	//endanswer return 0, nil
 }
