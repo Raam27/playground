@@ -17,6 +17,7 @@ type FileData struct {
 }
 
 func ReadFile(name string) (FileData, error) {
+	//beginanswer
 	data, err := ioutil.ReadFile(name)
 	if err != nil {
 		return FileData{}, err
@@ -27,4 +28,5 @@ func ReadFile(name string) (FileData, error) {
 		Size: len(data),
 		Data: data,
 	}, nil
+	//endanswer return FileData{}, nil
 }

@@ -12,6 +12,7 @@ func main() {
 }
 
 func ScanToArray(arr *[]string, fileName string) error {
+	//beginanswer
 	file, err := os.Open(fileName)
 	if err != nil {
 		return err
@@ -23,9 +24,11 @@ func ScanToArray(arr *[]string, fileName string) error {
 		*arr = append(*arr, scanner.Text())
 	}
 	return nil
+	//endanswer return nil
 }
 
 func ScanToMap(dataMap map[string]string, fileName string) error {
+	//beginanswer
 	file, err := os.Open(fileName)
 	if err != nil {
 		return err
@@ -40,4 +43,5 @@ func ScanToMap(dataMap map[string]string, fileName string) error {
 		dataMap[text[0]] = text[1]
 	}
 	return nil
+	//endanswer return nil
 }
