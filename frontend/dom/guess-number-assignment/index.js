@@ -23,6 +23,7 @@ newGameBtn.addEventListener('click', resetGame)
 checkBtn.addEventListener('click', checkNumber)
 //endanswer
 
+
 function displayMessage(msg) {
   //beginanswer
   message.innerHTML = msg
@@ -39,6 +40,8 @@ function resetGame() {
   randomNumber = Math.floor((Math.random() * 10) + 1)
   console.log(randomNumber);
   //endanswer
+  //dilarang menghapus code dibawah ini!
+  document.getElementById('hidden-number').innerHTML = randomNumber
 }
 
 function checkNumber() {
@@ -64,3 +67,6 @@ function checkNumber() {
   }
   //endanswer
 }
+
+//dilarang menghapus code dibawah ini!
+document.getElementById('hidden-number').innerHTML = randomNumber

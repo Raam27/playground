@@ -178,6 +178,7 @@ let citation = document.getElementsByClassName('citation')[0]
 let year = document.getElementsByClassName('year')[0]
 let button = document.getElementsByClassName('btn-generate')[0]
 
+displayQuote()
 button.addEventListener('click', displayQuote)
 //endanswer
 

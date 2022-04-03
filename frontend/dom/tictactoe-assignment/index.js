@@ -42,7 +42,6 @@ function checkWinner() {
         winner = getValue(0, 2);
     }
 
-
     //diagonal
     if (getValue(0, 0) != "" && getValue(0, 0) === getValue(1, 1) && getValue(0, 0) === getValue(2, 2)) {
         winner = getValue(0, 0);
@@ -58,6 +57,20 @@ function checkWinner() {
     }
 }
 
+function checkNoWinner() {
+    //beginanswer
+    let getValue = (y, x) => document.getElementById(y + "-" + x).textContent;
+    for (let i = 0; i < SIZE; i++) {
+        for (let j = 0; j < SIZE; j++) {
+            if (getValue(i, j) == "") {
+                return false;
+            }
+        }
+    }
+    return true
+    //endanswer
+}
+
 //handle click event, don't forget to disable the button so that it can't be clicked again
 function click(event) {
     //beginanswer
@@ -71,6 +84,10 @@ function click(event) {
     }
 
     checkWinner()
+    if (checkNoWinner()) {
+        //the board is full but no winner, it's a tie
+        generate();
+    }
     //endanswer
 }
 
