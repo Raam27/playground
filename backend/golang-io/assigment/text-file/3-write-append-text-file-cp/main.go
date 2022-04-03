@@ -10,6 +10,7 @@ func main() {
 }
 
 func AddString(fileName string, stringToAdd string) error {
+	//beginanswer
 	f, err := os.OpenFile(fileName, os.O_APPEND|os.O_WRONLY, 0644)
 	if err != nil {
 		return err
@@ -20,4 +21,5 @@ func AddString(fileName string, stringToAdd string) error {
 		return err
 	}
 	return nil
+	//endanswer return nil
 }
