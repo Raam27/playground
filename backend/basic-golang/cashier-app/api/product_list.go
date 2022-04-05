@@ -2,6 +2,7 @@ package api
 
 import (
 	"encoding/json"
+	"fmt"
 	"net/http"
 )
 
@@ -20,7 +21,6 @@ type ProductListSuccessResponse struct {
 }
 
 func (api *API) productList(w http.ResponseWriter, req *http.Request) {
-	//beginanswer
 	encoder := json.NewEncoder(w)
 
 	response := ProductListSuccessResponse{}
@@ -38,6 +38,9 @@ func (api *API) productList(w http.ResponseWriter, req *http.Request) {
 		return
 	}
 
+	fmt.Println(products)
+
+	//beginanswer
 	for _, product := range products {
 		response.Products = append(response.Products, Product{
 			Name:     product.ProductName,

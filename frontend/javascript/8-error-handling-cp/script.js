@@ -9,7 +9,6 @@
 // Input: 15
 // Output: "Masukan salah. Input bulan antara 1-12"
 
-// beginanswer
 function getMonthName(monthNumber) {
     monthNumber = monthNumber - 1;
     let months = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli',
@@ -21,9 +20,12 @@ function getMonthName(monthNumber) {
     }
   }
   
+  //beginanswer
   try {
+  //endanswer
     let myMonth = parseInt(prompt("Masukan bilangan: "));
     getMonthName(myMonth);
+  //beginanswer
   }
   catch (e) {
     console.log(e.message);

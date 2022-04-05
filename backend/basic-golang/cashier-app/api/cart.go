@@ -2,6 +2,7 @@ package api
 
 import (
 	"encoding/json"
+	"fmt"
 	"net/http"
 
 	"github.com/ruang-guru/playground/backend/basic-golang/cashier-app/repository"
@@ -52,22 +53,21 @@ func (api *API) addToCart(w http.ResponseWriter, req *http.Request) {
 }
 
 func (api *API) clearCart(w http.ResponseWriter, req *http.Request) {
-	//beginanswer
 	err := api.cartItemRepo.ResetCartItems()
 	encoder := json.NewEncoder(w)
 	defer func() {
 		if err != nil {
+			//beginanswer
 			w.WriteHeader(http.StatusBadRequest)
+			//endanswer
 			encoder.Encode(CartErrorResponse{Error: err.Error()})
 		}
 	}()
 
 	w.WriteHeader(http.StatusOK)
-	//endanswer
 }
 
 func (api *API) cartList(w http.ResponseWriter, req *http.Request) {
-	//beginanswer
 	cartItems, err := api.cartItemRepo.SelectAll()
 	encoder := json.NewEncoder(w)
 	defer func() {
@@ -77,6 +77,9 @@ func (api *API) cartList(w http.ResponseWriter, req *http.Request) {
 		}
 	}()
 
+	fmt.Println(cartItems)
+
+	//beginanswer
 	encoder.Encode(CartListSuccessResponse{CartItems: cartItems})
 	//endanswer encoder.Encode(CartListSuccessResponse{CartItems: []repository.CartItem{}})
 }

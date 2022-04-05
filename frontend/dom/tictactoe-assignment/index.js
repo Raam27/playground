@@ -58,29 +58,32 @@ function checkWinner() {
 }
 
 function checkNoWinner() {
-    //beginanswer
     let getValue = (y, x) => document.getElementById(y + "-" + x).textContent;
     for (let i = 0; i < SIZE; i++) {
         for (let j = 0; j < SIZE; j++) {
             if (getValue(i, j) == "") {
+                //beginanswer
                 return false;
+                //endanswer
             }
         }
     }
     return true
-    //endanswer
 }
 
 //handle click event, don't forget to disable the button so that it can't be clicked again
 function click(event) {
-    //beginanswer
     this.disabled = true;
     this.textContent = turn;
 
     if (turn == "X") {
+        //beginanswer
         turn = "O";
+        //endanswer
     } else {
+        //beginanswer
         turn = "X";
+        //endanswer
     }
 
     checkWinner()
@@ -88,7 +91,6 @@ function click(event) {
         //the board is full but no winner, it's a tie
         generate();
     }
-    //endanswer
 }
 
 //generate the tictactoe board. It is just a 3x3 table with <button/> inside <td/>
@@ -103,7 +105,6 @@ function generate() {
     for (let i=0; i<SIZE; i++) {
         let tr = document.createElement("tr");
         table.appendChild(tr);
-        //beginanswer
         for (let j=0; j<SIZE; j++) {
             let td = document.createElement("td");
             tr.appendChild(td);
@@ -111,12 +112,13 @@ function generate() {
             let button = document.createElement("button");
             button.style.width = BUTTON_SIZE;
             button.style.height = BUTTON_SIZE;
+            //beginanswer
             button.onclick = click;
+            //endanswer
             button.id = i + "-" + j;
 
             td.appendChild(button);
         }
-        //endanswer
     }
 
     renderScore();

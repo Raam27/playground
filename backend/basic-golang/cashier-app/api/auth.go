@@ -2,6 +2,7 @@ package api
 
 import (
 	"encoding/json"
+	"fmt"
 	"net/http"
 )
 
@@ -14,7 +15,6 @@ type AuthErrorResponse struct {
 }
 
 func (api *API) login(w http.ResponseWriter, req *http.Request) {
-	//beginanswer
 	username := req.URL.Query().Get("username")
 	password := req.URL.Query().Get("password")
 	res, err := api.usersRepo.Login(username, password)
@@ -26,12 +26,15 @@ func (api *API) login(w http.ResponseWriter, req *http.Request) {
 		encoder.Encode(AuthErrorResponse{Error: err.Error()})
 		return
 	}
+
+	fmt.Println(res)
+
+	//beginanswer
 	json.NewEncoder(w).Encode(LoginSuccessResponse{Username: *res})
 	//endanswer json.NewEncoder(w).Encode(LoginSuccessResponse{Username: ""})
 }
 
 func (api *API) logout(w http.ResponseWriter, req *http.Request) {
-	//beginanswer
 	username := req.URL.Query().Get("username")
 	err := api.usersRepo.Logout(username)
 	if err != nil {
@@ -41,6 +44,7 @@ func (api *API) logout(w http.ResponseWriter, req *http.Request) {
 		return
 	}
 
+	//beginanswer
 	w.WriteHeader(http.StatusOK)
 	//endanswer encoder.Encode(AuthErrorResponse{Error: ""})
 }
