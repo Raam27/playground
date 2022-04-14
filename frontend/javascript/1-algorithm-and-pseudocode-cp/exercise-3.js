@@ -1,5 +1,6 @@
 // Buatlah pseudocode untuk menjumlahkan bilangan genap yang ada di antara 1 sampai 10
 
+<<<<<<< HEAD
 // beginanswer
 ```
 BEGIN
@@ -16,3 +17,6 @@ OUTPUT sum
 END
 ```
 // endanswer
+=======
+// TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9

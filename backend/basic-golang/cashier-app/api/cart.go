@@ -57,9 +57,13 @@ func (api *API) clearCart(w http.ResponseWriter, req *http.Request) {
 	encoder := json.NewEncoder(w)
 	defer func() {
 		if err != nil {
+<<<<<<< HEAD
 			//beginanswer
 			w.WriteHeader(http.StatusBadRequest)
 			//endanswer
+=======
+			// TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 			encoder.Encode(CartErrorResponse{Error: err.Error()})
 		}
 	}()
@@ -79,7 +83,11 @@ func (api *API) cartList(w http.ResponseWriter, req *http.Request) {
 
 	fmt.Println(cartItems)
 
+<<<<<<< HEAD
 	//beginanswer
 	encoder.Encode(CartListSuccessResponse{CartItems: cartItems})
 	//endanswer encoder.Encode(CartListSuccessResponse{CartItems: []repository.CartItem{}})
+=======
+	encoder.Encode(CartListSuccessResponse{CartItems: []repository.CartItem{}}) // TODO: replace this
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 }

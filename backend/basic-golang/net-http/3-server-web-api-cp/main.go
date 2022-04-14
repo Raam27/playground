@@ -18,6 +18,7 @@ type Table struct {
 }
 
 func viewTable(w http.ResponseWriter, r *http.Request) {
+<<<<<<< HEAD
 	//beginanswer
 	var t Table
 	id := r.FormValue("id")
@@ -45,6 +46,9 @@ func viewTable(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 	}
 	//endanswer
+=======
+	// TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 }
 
 var data = []Table{

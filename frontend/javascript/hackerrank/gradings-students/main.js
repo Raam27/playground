@@ -13,6 +13,7 @@
 
 function gradingStudents(grades) {
   // Write your code here
+<<<<<<< HEAD
   //beginanswer
   var newGrades = [];
   for (var i = 0; i < grades.length; i++) {
@@ -28,6 +29,9 @@ function gradingStudents(grades) {
   }
   return newGrades
   //endanswer
+=======
+  // TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 }
 
 function main() {

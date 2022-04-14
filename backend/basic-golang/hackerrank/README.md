@@ -1,5 +1,6 @@
 # Hackerrank Exercise - Cases Study
 
+<<<<<<< HEAD
 <!-- beginanswer -->
 
 - Please watch the following Guide Video:
@@ -15,6 +16,9 @@ Untuk democode(practice) Lecturer langsung di Hackerrank mengingat case-study ny
 
 Untuk tugas ini tidak wajib di kumpulkan hanya dibahas di sesi Lecture, namun **dipastikan semua student dapat mengikuti practice dengan baik**, bila ada student yang bingung dan belum catch up usahakan Instructure dapat merangkulnya di sesi lecture.
 <!-- endanswer nop -->
+=======
+
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 
 
 ## Point of Lecturer

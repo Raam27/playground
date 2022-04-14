@@ -7,6 +7,7 @@ Uncomment variable dibawah ini untuk mulai mengerjakan. dilarang mengganti nama 
 // let stopbtn = tombol untuk memberhentikan stopwatch
 // let resetbtn = tombol untuk mereset value dari stopwatch
 
+<<<<<<< HEAD
 //beginanswer
 let stopwatch = document.getElementById('stopwatch')
 let startbtn = document.getElementsByClassName('btn-start')[0]
@@ -82,4 +83,23 @@ function runTime() {
     setTimeout(runTime, 1000)
   }
   //endanswer
+=======
+// TODO: answer here
+
+
+function start() {
+  // TODO: answer here
+}
+
+function stop() {
+  // TODO: answer here
+}
+
+function reset() {
+  // TODO: answer here
+}
+
+function runTime() {
+  // TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 }

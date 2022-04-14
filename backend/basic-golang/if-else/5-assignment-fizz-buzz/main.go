@@ -14,6 +14,7 @@ import "fmt"
 
 func main() {
 	for i := 1; i <= 100; i++ {
+<<<<<<< HEAD
 		//beginanswer
 		fizz := "fizz"
 		buzz := "buzz"
@@ -28,5 +29,8 @@ func main() {
 			fmt.Println(i)
 		}
 		//endanswer
+=======
+		// TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 	}
 }

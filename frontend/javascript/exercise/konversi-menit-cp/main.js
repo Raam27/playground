@@ -12,6 +12,7 @@
 
 
 function konversiMenit(menit) {
+<<<<<<< HEAD
   //beginanswer
   var jam = Math.floor(menit / 60)
   var sisa = menit - (jam * 60)
@@ -22,6 +23,9 @@ function konversiMenit(menit) {
     return `${jam}:${sisa}`
   }
   //endanswer
+=======
+  // TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 }
 
 console.log(konversiMenit(61));

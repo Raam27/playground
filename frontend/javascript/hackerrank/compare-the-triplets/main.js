@@ -16,6 +16,7 @@
 
 function compareTriplets(a, b) {
   // Write your code here
+<<<<<<< HEAD
   //beginanswer
   let arr = [0, 0]
   for (let i = 0; i < a.length; i++) {
@@ -24,6 +25,9 @@ function compareTriplets(a, b) {
   }
   return arr
   //endanswer
+=======
+  // TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 }
 function main() {
 

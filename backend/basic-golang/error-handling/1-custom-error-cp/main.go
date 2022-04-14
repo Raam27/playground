@@ -8,6 +8,7 @@ import (
 // Dari contoh yang telah diberikan, kalian dapat mencoba membuat custom error baru dengan atribut message dan errCode.
 // Misalnya adalah error untuk validasi data umur kurang dari 0.
 
+<<<<<<< HEAD
 //beginanswer
 type ErrorInvalidData struct {
 	message string
@@ -19,6 +20,9 @@ func (e *ErrorInvalidData) Error() string {
 }
 
 //endanswer
+=======
+// TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 
 func GetAge(data map[string]int, name string) (int, error) {
 	if _, ok := data[name]; !ok {
@@ -27,12 +31,16 @@ func GetAge(data map[string]int, name string) (int, error) {
 
 	if data[name] < 0 {
 		// Isilah baris ini dengan return 0 dan custom error yang telah dibuat dengan message error invalid data dan errCode 500
+<<<<<<< HEAD
 		//beginanswer
 		return 0, &ErrorInvalidData{
 			message: "error invalid data",
 			errCode: 500,
 		}
 		//endanswer
+=======
+		// TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 	}
 
 	return data[name], nil

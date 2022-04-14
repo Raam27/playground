@@ -10,6 +10,7 @@ import (
 // {"jenis":"Meja Belajar","color":"green","jumlah":2}
 
 type Meja struct {
+<<<<<<< HEAD
 	//beginanswer
 	Jenis  string `json:"jenis"`
 	Warna  string `json:"color"`
@@ -28,6 +29,13 @@ func (m Meja) EncodeJSON() string {
 	return string(mejaJSON)
 
 	//endanswer
+=======
+	// TODO: answer here
+}
+
+func (m Meja) EncodeJSON() string {
+	// TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 }
 
 func NewMeja(m Meja) Meja {

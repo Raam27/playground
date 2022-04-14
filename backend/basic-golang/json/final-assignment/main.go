@@ -33,6 +33,7 @@ import (
 }
 */
 
+<<<<<<< HEAD
 //beginanswer
 type Ukuran struct {
 	Panjang string `json:"panjang"`
@@ -67,6 +68,12 @@ func (r Ruang) EncodeJSON() string {
 	return string(mejaJSON)
 
 	//endanswer
+=======
+// TODO: answer here
+
+func (r Ruang) EncodeJSON() string {
+	// TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 }
 
 func NewRuang(r Ruang) Ruang {

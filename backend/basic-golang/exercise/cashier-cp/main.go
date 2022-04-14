@@ -46,6 +46,7 @@ func main() {
 
 	orderMenu := make(map[string]int64)
 
+<<<<<<< HEAD
 	//beginanswer
 	for {
 		fmt.Println("Menu makanan:")
@@ -98,4 +99,7 @@ func main() {
 
 	fmt.Println("Total harga makanan yang harus anda bayar: ", total)
 	//endanswer
+=======
+	// TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 }

@@ -11,6 +11,7 @@ import (
 // Full Problem: https://www.hackerrank.com/challenges/mini-max-sum/problem
 
 func miniMaxSum(arr []int32) {
+<<<<<<< HEAD
 	//beginanswer
 	min, max := arr[0], arr[0]
 	var sum int
@@ -27,6 +28,9 @@ func miniMaxSum(arr []int32) {
 
 	fmt.Printf("%d %d\n", sum-int(max), sum-int(min))
 	//endanswer
+=======
+	// TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 }
 
 func main() {

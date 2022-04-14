@@ -36,6 +36,7 @@
 */
 
 function fixData(line) {
+<<<<<<< HEAD
   // beginanswer
   let vokal = 'aiueo';
   var vok = 0;
@@ -92,6 +93,9 @@ function fixData(line) {
     return hasil
   }
   //endanswer
+=======
+  // TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 }
 
 console.log(fixData('aoi#fdg#ue'))

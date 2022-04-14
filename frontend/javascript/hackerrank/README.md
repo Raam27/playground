@@ -1,5 +1,6 @@
 # Hackerrank Exercise - Cases Study
 
+<<<<<<< HEAD
 <!-- beginanswer -->
 
 - Please watch the following Guide Video:
@@ -17,6 +18,9 @@ Untuk tugas ini **wajib dikerjakan dan dikumpulkan via grader**, **pastikan semu
 
 
 <!-- endanswer nop -->
+=======
+
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 
 
 ## Point of Lecturer

@@ -13,11 +13,15 @@ import "encoding/json"
 // }
 
 type UserRank struct {
+<<<<<<< HEAD
 	//beginanswer
 	Name  string `json:"name"`
 	Email string `json:"-"`
 	Rank  int    `json:"rank"`
 	//endanswer
+=======
+	// TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 }
 
 type Leaderboard struct {
@@ -25,6 +29,7 @@ type Leaderboard struct {
 }
 
 func EncodeToJson(leaderboard Leaderboard) ([]byte, error) {
+<<<<<<< HEAD
 	//beginanswer
 	jsonData, err := json.Marshal(leaderboard)
 	if err != nil {
@@ -32,4 +37,7 @@ func EncodeToJson(leaderboard Leaderboard) ([]byte, error) {
 	}
 	return jsonData, nil
 	//endanswer
+=======
+	// TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 }

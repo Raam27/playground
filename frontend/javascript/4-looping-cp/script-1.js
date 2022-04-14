@@ -14,6 +14,7 @@
 // Masukan jumlah bilangan yang ingin dicek, iterasi dari angka 1
 const counter = parseInt(prompt("Masukan jumlah bilangan yang ingin dicek: "));
 
+<<<<<<< HEAD
 // beginanswer
 for (let i = 1; i <= counter; i++) {
   if (i % 3 === 0 && i % 5 === 0) {
@@ -27,3 +28,6 @@ for (let i = 1; i <= counter; i++) {
   }
 }
 // endanswer
+=======
+// TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9

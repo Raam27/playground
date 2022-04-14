@@ -9,6 +9,7 @@ import (
 func Routes() *http.ServeMux {
 	mux := http.NewServeMux()
 	mux.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+<<<<<<< HEAD
 		//beginanswer
 		w.WriteHeader(http.StatusOK)
 		w.Write([]byte("Hello, world!"))
@@ -44,6 +45,18 @@ func Routes() *http.ServeMux {
 		w.Header().Set("Content-Type", "application/json")
 		w.Write([]byte(`{"message": "Hello, world!"}`))
 		//endanswer
+=======
+		// TODO: answer here
+	})
+	mux.HandleFunc("/echo", func(w http.ResponseWriter, r *http.Request) {
+		// TODO: answer here
+	})
+	mux.HandleFunc("/add", func(w http.ResponseWriter, r *http.Request) {
+		// TODO: answer here
+	})
+	mux.HandleFunc("/hellojson", func(w http.ResponseWriter, r *http.Request) {
+		// TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 	})
 
 	return mux

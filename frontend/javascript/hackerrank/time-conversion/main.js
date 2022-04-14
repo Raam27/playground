@@ -14,6 +14,7 @@
 
 function timeConversion(s) {
   // Write your code here
+<<<<<<< HEAD
   //beginanswer
   var s24;
   if (s.includes("PM")) {
@@ -32,6 +33,9 @@ function timeConversion(s) {
   }
   return s24;
   //endanswer
+=======
+  // TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 }
 
 function main() {

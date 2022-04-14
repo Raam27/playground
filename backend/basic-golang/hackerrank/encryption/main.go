@@ -20,6 +20,7 @@ import (
 
 func encryption(s string) string {
 	// Write your code here
+<<<<<<< HEAD
 	//beginanswer
 	root := math.Sqrt(float64(len(s)))
 	width := int(math.Ceil(root))
@@ -59,6 +60,9 @@ func encryption(s string) string {
 
 	return result.String()
 	//endanswer return ""
+=======
+	return "" // TODO: replace this
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 }
 
 func main() {

@@ -11,6 +11,7 @@ func main() {
 }
 
 func CSVToMap(data map[string]string, fileName string) (map[string]string, error) {
+<<<<<<< HEAD
 	//beginanswer
 	f, err := os.Open(fileName)
 	if err != nil {
@@ -38,4 +39,7 @@ func CSVToMap(data map[string]string, fileName string) (map[string]string, error
 
 	return data, nil
 	//endanswer
+=======
+	// TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 }

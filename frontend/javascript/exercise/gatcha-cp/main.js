@@ -10,6 +10,7 @@
  */
 
 // PSEUDOCODE:
+<<<<<<< HEAD
 //beginanswer
 // SET 'button' with random value
 // IF 'button' > 5
@@ -63,6 +64,16 @@ function gatcha(button) {
 //beginanswer
 var button = Math.round(Math.random() * 10);
 //endanswer
+=======
+// TODO: answer here
+
+function gatcha(button) {
+  // TODO: answer here
+}
+
+// Create variable button here
+// TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 
 console.log(gatcha(button))
 

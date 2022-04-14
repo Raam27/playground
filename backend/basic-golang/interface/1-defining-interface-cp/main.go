@@ -11,6 +11,7 @@ import "fmt"
 // Bonus untuk SeniorEngineer adalah 2 * BaseSalary
 // Bonus untuk JuniorEngineer adalah 1 * BaseSalary
 
+<<<<<<< HEAD
 //beginanswer
 type Employee interface {
 	GetBonus() int
@@ -52,10 +53,18 @@ func TotalEmployeeBonus(employees []Employee) int {
 
 	return total
 	//endanswer
+=======
+// TODO: answer here
+
+func TotalEmployeeBonus(employees []Employee) int {
+	// Hitunglah total bonus yang dikeluarkan dari list of Employee
+	// TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 }
 
 func main() {
 	// Buatlah objek konkret untuk masing-masing objek dan panggil function TotalEmployeeBonus. Print total bonus untuk semua employee.
+<<<<<<< HEAD
 	//beginanswer
 	manager := Manager{
 		BaseSalary: 20000000,
@@ -70,4 +79,7 @@ func main() {
 	totalBonus := TotalEmployeeBonus([]Employee{manager, seniorEngineer, juniorEngineer})
 	fmt.Println(totalBonus)
 	//endanswer
+=======
+	// TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 }

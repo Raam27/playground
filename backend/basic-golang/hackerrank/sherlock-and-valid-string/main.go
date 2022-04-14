@@ -18,6 +18,7 @@ import (
 //Problem statement: https://www.hackerrank.com/challenges/sherlock-and-valid-string/problem
 func isValid(s string) string {
 	// Write your code here
+<<<<<<< HEAD
 	//beginanswer
 	count := make(map[rune]int)
 	for _, c := range s {
@@ -55,6 +56,9 @@ func isValid(s string) string {
 	}
 	return "NO"
 	//endanswer return ""
+=======
+	return "" // TODO: replace this
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 }
 
 func main() {

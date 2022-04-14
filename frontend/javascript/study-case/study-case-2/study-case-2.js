@@ -27,6 +27,7 @@
 // Jalan untuk mendapatkan emas maksimal, 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7.
 
 function getMaximumGold(grid) {
+<<<<<<< HEAD
     // beginanswer
 
     if (grid === undefined || grid.length == 0) {
@@ -75,5 +76,11 @@ function outOfBound(row, col, m, n) {
     return row < 0 || col < 0 || row >= m || col >= n;
 }
 // endanswer
+=======
+    // TODO: answer here
+}; 
+
+// TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 
 module.exports = getMaximumGold

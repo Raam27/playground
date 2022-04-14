@@ -65,6 +65,7 @@ func (u *CartItemRepository) Save(cartItems []CartItem) error {
 }
 
 func (u *CartItemRepository) SelectAll() ([]CartItem, error) {
+<<<<<<< HEAD
 	//beginanswer
 	cartItems, err := u.LoadOrCreate()
 	if err != nil {
@@ -72,6 +73,9 @@ func (u *CartItemRepository) SelectAll() ([]CartItem, error) {
 	}
 	return cartItems, nil
 	//endanswer return []CartItem{}, nil
+=======
+	return []CartItem{}, nil // TODO: replace this
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 }
 
 func (u *CartItemRepository) Add(product Product) error {
@@ -80,6 +84,7 @@ func (u *CartItemRepository) Add(product Product) error {
 		return err
 	}
 
+<<<<<<< HEAD
 	//beginanswer
 
 	//update
@@ -125,4 +130,15 @@ func (u *CartItemRepository) TotalPrice() (int, error) {
 
 	return totalPrice, nil
 	//endanswer return 0, nil
+=======
+	return nil // TODO: replace this
+}
+
+func (u *CartItemRepository) ResetCartItems() error {
+	return nil // TODO: replace this
+}
+
+func (u *CartItemRepository) TotalPrice() (int, error) {
+	return 0, nil // TODO: replace this
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 }

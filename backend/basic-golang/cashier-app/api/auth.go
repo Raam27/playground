@@ -29,9 +29,13 @@ func (api *API) login(w http.ResponseWriter, req *http.Request) {
 
 	fmt.Println(res)
 
+<<<<<<< HEAD
 	//beginanswer
 	json.NewEncoder(w).Encode(LoginSuccessResponse{Username: *res})
 	//endanswer json.NewEncoder(w).Encode(LoginSuccessResponse{Username: ""})
+=======
+	json.NewEncoder(w).Encode(LoginSuccessResponse{Username: ""}) // TODO: replace this
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 }
 
 func (api *API) logout(w http.ResponseWriter, req *http.Request) {
@@ -44,7 +48,11 @@ func (api *API) logout(w http.ResponseWriter, req *http.Request) {
 		return
 	}
 
+<<<<<<< HEAD
 	//beginanswer
 	w.WriteHeader(http.StatusOK)
 	//endanswer encoder.Encode(AuthErrorResponse{Error: ""})
+=======
+	encoder.Encode(AuthErrorResponse{Error: ""}) // TODO: replace this
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 }
