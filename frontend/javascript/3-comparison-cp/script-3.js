@@ -8,6 +8,7 @@
 // Masukan suatu angka
 const score = parseInt(prompt("Masukan nilai: "));
 
+<<<<<<< HEAD
 // beginanswer
 switch (score) {
     case (score >= 91 && score <= 100):
@@ -29,3 +30,6 @@ switch (score) {
         break;
 }
 // endanswer
+=======
+// TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9

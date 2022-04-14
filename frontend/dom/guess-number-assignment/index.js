@@ -10,6 +10,7 @@ Uncomment variable dibawah ini untuk mulai mengerjakan. dilarang mengganti nama 
 // let checkBtn = tombol untuk melakuan pengecekan angka pada input
 // let score = nilai yang akan ditampilakan
 
+<<<<<<< HEAD
 //beginanswer
 let newGameBtn = document.getElementsByClassName('new-game')[0]
 let randomNumber = Math.floor((Math.random() * 10) + 1)
@@ -40,11 +41,23 @@ function resetGame() {
   randomNumber = Math.floor((Math.random() * 10) + 1)
   console.log(randomNumber);
   //endanswer
+=======
+// TODO: answer here
+
+
+function displayMessage(msg) {
+  // TODO: answer here
+}
+
+function resetGame() {
+  // TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
   //dilarang menghapus code dibawah ini!
   document.getElementById('hidden-number').innerHTML = randomNumber
 }
 
 function checkNumber() {
+<<<<<<< HEAD
   //beginanswer
   if (input.value < 1 || input.value > 10) {
     displayMessage('Guess any number between 1 and 10')
@@ -66,6 +79,9 @@ function checkNumber() {
     }
   }
   //endanswer
+=======
+  // TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 }
 
 //dilarang menghapus code dibawah ini!

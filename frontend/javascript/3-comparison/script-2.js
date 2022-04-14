@@ -3,6 +3,7 @@
 // Masukan suatu angka
 const number = parseInt(prompt("Masukan bilangan: "));
 
+<<<<<<< HEAD
 // beginanswer
 switch (number) {
     case (number < 0):
@@ -18,3 +19,6 @@ switch (number) {
         break;
 }
 // endanswer
+=======
+// TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9

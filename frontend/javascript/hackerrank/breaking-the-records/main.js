@@ -14,6 +14,7 @@
 
 function breakingRecords(scores) {
   // Write your code here
+<<<<<<< HEAD
   //beginanswer
   let highestScore = scores[0];
   let lowestScore = scores[0];
@@ -31,6 +32,9 @@ function breakingRecords(scores) {
 
   return arr
   //endanswer
+=======
+  // TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 }
 
 function main() {

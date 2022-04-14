@@ -6,6 +6,7 @@
 var word = 'wow JavaScript is so cool and i will become frontend developer';
 var exampleFirstWord = word.substring(0, 3);
 
+<<<<<<< HEAD
 //beginanswer
 var secondWord = word.substring(4, 14);
 var thirdWord = word.substring(15, 17);
@@ -30,6 +31,9 @@ var ninthWordLength = ninthWord.length;
 var tenthWordLength = tenthWord.length;
 var eleventhWordLength = eleventhWord.length;
 //endanswer
+=======
+// TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 
 console.log('First Word: ' + exampleFirstWord + ', with length: ' + firstWordLength);
 console.log('Second Word: ' + secondWord + ', with length: ' + secondWordLength);

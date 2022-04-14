@@ -12,6 +12,7 @@
 
 function miniMaxSum(arr) {
   // Write your code here
+<<<<<<< HEAD
   //beginanswer
   var sumArr = [];
   var cursor = 0;
@@ -29,6 +30,9 @@ function miniMaxSum(arr) {
   // console.log(min + ' ' + max);
   return min + ' ' + max 
   //endanswer
+=======
+  // TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 }
 
 function main() {

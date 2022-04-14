@@ -16,6 +16,7 @@
 
 
 // PSEUDOCODE :
+<<<<<<< HEAD
 //beginanswer
 // STORE "juice" with 50000
 // STORE "latte" with 300000
@@ -37,11 +38,15 @@
 //   ELSE 
 //    RETURN "Uang tidak cukup. Anda harus pulang."
 //endanswer
+=======
+// TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 
 function ruangCafe(name, age, money) {
   const juice = 50000;
   const latte = 300000;
 
+<<<<<<< HEAD
   //beginanswer
   if (name.length === 0) {
     return "Anda tidak boleh masuk!"
@@ -65,6 +70,9 @@ function ruangCafe(name, age, money) {
     }
   }
   //endanswer
+=======
+  // TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 }
 
 console.log(ruangCafe('', 21, 2000000))

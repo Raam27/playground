@@ -20,6 +20,7 @@ Lengkapilah function dengan input kata sandi dan output terjemahannya
 
 
 function terjemahKataSandi(kataSandi) {
+<<<<<<< HEAD
   //beginanswer
   var tampung = "";
 
@@ -51,6 +52,9 @@ function terjemahKataSandi(kataSandi) {
   }
   return tampung
   //endanswer
+=======
+  // TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 }
 
 

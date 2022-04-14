@@ -16,6 +16,7 @@ type Student struct {
 }
 
 func (s Student) CalculateScore(scores []float64) float64 {
+<<<<<<< HEAD
 	//beginanswer
 	var result float64
 	if len(scores) == 0 {
@@ -26,10 +27,14 @@ func (s Student) CalculateScore(scores []float64) float64 {
 	}
 	return result / float64(len(scores))
 	//endanswer
+=======
+	// TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 }
 
 func (s Student) GenerateStudentTemplate() string {
 	buff := new(bytes.Buffer)
+<<<<<<< HEAD
 	//beginanswer
 	tmp1 := template.New("Template_1")
 	tmp1, err := tmp1.Parse("Hello {{.Name}}, Nilai rata-rata kamu {{ .CalculateScore .Scores }}")
@@ -41,6 +46,9 @@ func (s Student) GenerateStudentTemplate() string {
 		fmt.Println(err)
 	}
 	//endanswer
+=======
+	// TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 	return buff.String()
 }
 

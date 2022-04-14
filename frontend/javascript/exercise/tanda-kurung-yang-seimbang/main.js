@@ -27,6 +27,7 @@
 function isBalanced(s) {
 
   // Tulis kode di sini
+<<<<<<< HEAD
   // beginanswer
   let stack = []; // O(n) space
   let OPENINGS = "{[(";
@@ -68,5 +69,8 @@ function isBalanced(s) {
     return opening === stack[stack.length - 1];
   }
   // endanswer
+=======
+  // TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 }
   

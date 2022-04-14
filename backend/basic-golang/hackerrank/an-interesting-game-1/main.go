@@ -20,6 +20,7 @@ import (
 //Problem statement: https://www.hackerrank.com/challenges/an-interesting-game-1/problem
 func gamingArray(arr []int) string {
 	// Write your code here
+<<<<<<< HEAD
 	// beginanswer
 	positions := make(map[int]int)
 	for i := 0; i < len(arr); i++ {
@@ -52,6 +53,9 @@ func gamingArray(arr []int) string {
 	}
 	return "BOB"
 	//endanswer return ""
+=======
+	return "" // TODO: replace this
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 }
 
 func main() {

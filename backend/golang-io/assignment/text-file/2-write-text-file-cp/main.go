@@ -8,6 +8,7 @@ import (
 // dalam test ini terdapat fungsi os.Remove ya. itu automatis nge remove file yang telah dibuat
 // Untuk keperluan testing
 func WriteFile(fileName string, fileData string) error {
+<<<<<<< HEAD
 	//beginanswer
 
 	//membuat file
@@ -30,4 +31,7 @@ func WriteFile(fileName string, fileData string) error {
 
 	return nil
 	//endanswer return nil
+=======
+	return nil // TODO: replace this
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 }

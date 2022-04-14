@@ -24,6 +24,7 @@ type Leaderboard struct {
 }
 
 func CalculateScore(leaderboard Leaderboard) int {
+<<<<<<< HEAD
 	//beginanswer
 	var total int
 	for _, user := range leaderboard.Users {
@@ -31,10 +32,14 @@ func CalculateScore(leaderboard Leaderboard) int {
 	}
 	return total
 	//endanswer
+=======
+	// TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 }
 
 func ExecuteToByteBuffer(leaderboard Leaderboard) ([]byte, error) {
 	var textTemplate string
+<<<<<<< HEAD
 	//beginanswer
 	funcMap := template.FuncMap{
 		"calculateScore": CalculateScore,
@@ -54,4 +59,7 @@ func ExecuteToByteBuffer(leaderboard Leaderboard) ([]byte, error) {
 
 	return b.Bytes(), nil
 	//endanswer
+=======
+	// TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 }

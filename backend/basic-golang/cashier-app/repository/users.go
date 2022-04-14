@@ -16,6 +16,7 @@ func NewUserRepository(db db.DB) UserRepository {
 }
 
 func (u *UserRepository) LoadOrCreate() ([]User, error) {
+<<<<<<< HEAD
 	//beginanswer
 	records, err := u.db.Load("users")
 	if err != nil {
@@ -119,6 +120,29 @@ func (u *UserRepository) Save(users []User) error {
 	}
 	return u.db.Save("users", records)
 	//endanswer return nil
+=======
+	return []User{}, nil // TODO: replace this
+}
+
+func (u *UserRepository) SelectAll() ([]User, error) {
+	return []User{}, nil // TODO: replace this
+}
+
+func (u UserRepository) Login(username string, password string) (*string, error) {
+	return nil, nil // TODO: replace this
+}
+
+func (u *UserRepository) FindLoggedinUser() (*string, error) {
+	return nil, nil // TODO: replace this
+}
+
+func (u *UserRepository) Logout(username string) error {
+	return nil // TODO: replace this
+}
+
+func (u *UserRepository) Save(users []User) error {
+	return nil // TODO: replace this
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 }
 
 func (u *UserRepository) changeStatus(username string, status bool) error {
@@ -127,6 +151,7 @@ func (u *UserRepository) changeStatus(username string, status bool) error {
 		return err
 	}
 
+<<<<<<< HEAD
 	//beginanswer
 	//update
 	for i := 0; i < len(users); i++ {
@@ -150,4 +175,11 @@ func (u *UserRepository) LogoutAll() error {
 	}
 	return nil
 	//endanswer return nil
+=======
+	return nil // TODO: replace this
+}
+
+func (u *UserRepository) LogoutAll() error {
+	return nil // TODO: replace this
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 }

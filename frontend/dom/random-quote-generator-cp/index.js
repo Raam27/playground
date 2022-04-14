@@ -171,6 +171,7 @@ var quotes = [
 	}
 ];
 
+<<<<<<< HEAD
 //beginanswer
 let quote = document.getElementById('random-quote')
 let author = document.getElementsByClassName('author')[0]
@@ -187,10 +188,17 @@ function getQuote() {
 	let index = Math.floor(Math.random() * quotes.length)
 	return quotes[index]
 	//endanswer
+=======
+// TODO: answer here
+
+function getQuote() {
+	// TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 }
 
 
 function displayQuote() {
+<<<<<<< HEAD
 	//beginanswer
 	let randomQuote = getQuote()
 	quote.innerText = randomQuote.quote
@@ -208,4 +216,7 @@ function displayQuote() {
 		year.innerHTML = ''
 	}
 	//endanswer
+=======
+	// TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 }

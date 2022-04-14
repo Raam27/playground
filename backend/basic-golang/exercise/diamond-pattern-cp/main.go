@@ -23,6 +23,7 @@ func main() {
 	fmt.Print("Size: ")
 	fmt.Scanf("%d", &size)
 
+<<<<<<< HEAD
 	//beginanswer
 	var i, j, k, l int
 	for i = size; i > 0; i-- {
@@ -50,4 +51,7 @@ func main() {
 		fmt.Printf("\n")
 	}
 	//endanswer
+=======
+	// TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 }

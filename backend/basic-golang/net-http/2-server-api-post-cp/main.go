@@ -55,6 +55,7 @@ func TablesHandler(w http.ResponseWriter, r *http.Request) {
 
 	// logic handle POST request
 	if r.Method == "POST" {
+<<<<<<< HEAD
 		//beginanswer
 		var ts []Table
 
@@ -73,6 +74,9 @@ func TablesHandler(w http.ResponseWriter, r *http.Request) {
 		data = append(data, ts...)
 
 		//endanswer
+=======
+		// TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 
 		// set header response code with status created/201
 		w.WriteHeader(http.StatusCreated)

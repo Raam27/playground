@@ -12,6 +12,7 @@ var _ = Describe("JSON Encode", func() {
 	Describe("JSON Encode Array Nested", func() {
 		It("encoding string JSON array nested", func() {
 			items := jsonencode.Ruang{}
+<<<<<<< HEAD
 			//beginanswer
 			items = jsonencode.Ruang{jsonencode.Items{
 				[]jsonencode.Item{
@@ -36,6 +37,9 @@ var _ = Describe("JSON Encode", func() {
 				},
 			}}
 			//endanswer
+=======
+			// TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 
 			meja := jsonencode.NewRuang(items)
 			result := meja.EncodeJSON()

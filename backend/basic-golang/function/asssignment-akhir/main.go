@@ -16,11 +16,15 @@ func main() {
 }
 
 func calculate(Number1, Number2 int) (sumResult, subtractResult, multiplyResult, divideResult int) {
+<<<<<<< HEAD
 	//beginanswer
 	sumResult = Number1 + Number2
 	subtractResult = Number1 - Number2
 	multiplyResult = Number1 * Number2
 	divideResult = Number1 / Number2
 	//endanswer
+=======
+	// TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 	return
 }

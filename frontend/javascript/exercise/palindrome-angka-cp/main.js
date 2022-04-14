@@ -7,6 +7,7 @@
  */
 
 function angkaPalindrome(num) {
+<<<<<<< HEAD
   //beginanswer
   var cek = true;
   while (cek) {
@@ -21,6 +22,9 @@ function angkaPalindrome(num) {
     }
   }
   //endanswer
+=======
+  // TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 }
 
 console.log(angkaPalindrome(10)); //11

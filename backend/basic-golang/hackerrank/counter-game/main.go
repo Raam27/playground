@@ -9,6 +9,7 @@ import (
 	"strings"
 )
 
+<<<<<<< HEAD
 //beginanswer
 //not optimal O(n) search, but enough for now
 func contains(arr []int64, n int64) bool {
@@ -21,6 +22,8 @@ func contains(arr []int64, n int64) bool {
 }
 
 //endanswer nop
+=======
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 
 /*
  * Complete the 'counterGame' function below.
@@ -32,6 +35,7 @@ func contains(arr []int64, n int64) bool {
 //Problem statement: https://www.hackerrank.com/challenges/counter-game
 func counterGame(n int64) string {
 	// Write your code here
+<<<<<<< HEAD
 	//beginanswer
 	powerOfTwos := make([]int64, 0)
 	for i := int64(1); i <= n; i *= 2 {
@@ -67,6 +71,9 @@ func counterGame(n int64) string {
 	}
 
 	//endanswer return ""
+=======
+	return "" // TODO: replace this
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 }
 
 func main() {

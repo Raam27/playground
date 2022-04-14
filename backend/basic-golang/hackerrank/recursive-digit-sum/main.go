@@ -20,6 +20,7 @@ import (
 
 //Problem statement: https://www.hackerrank.com/challenges/recursive-digit-sum/problem
 func superDigit(n string, k int32) int32 {
+<<<<<<< HEAD
 	//beginanswer
 	sumDigit := func(n string) int64 {
 		sum := int64(0)
@@ -37,6 +38,9 @@ func superDigit(n string, k int32) int32 {
 		return superDigit(fmt.Sprint(sumDigit(n)*int64(k)), 1)
 	}
 	//endanswer return 0
+=======
+	return 0 // TODO: replace this
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 }
 
 func main() {

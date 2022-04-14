@@ -9,6 +9,7 @@ func main() {
 	slice := []string{"Hello", "World"}
 
 	// Dibawah ini adalah jawaban nomor 2: silahkan kalian copy paste dari jawaban nomor 2
+<<<<<<< HEAD
 	//beginanswer
 	slice = append(slice, "Olleh")
 	fmt.Println(slice)
@@ -20,4 +21,10 @@ func main() {
 	slice[2] = "Aurelius"
 	fmt.Println(slice)
 	//endanswer
+=======
+	// TODO: answer here
+
+	// Dibawah ini adalah jawaban nomor 3 silahkan kalian isi
+	// TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 }

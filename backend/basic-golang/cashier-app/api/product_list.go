@@ -40,6 +40,7 @@ func (api *API) productList(w http.ResponseWriter, req *http.Request) {
 
 	fmt.Println(products)
 
+<<<<<<< HEAD
 	//beginanswer
 	for _, product := range products {
 		response.Products = append(response.Products, Product{
@@ -51,4 +52,7 @@ func (api *API) productList(w http.ResponseWriter, req *http.Request) {
 
 	encoder.Encode(response)
 	//endanswer encoder.Encode(ProductListSuccessResponse{Products: []Product{}})
+=======
+	encoder.Encode(ProductListSuccessResponse{Products: []Product{}}) // TODO: replace this
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 }

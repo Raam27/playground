@@ -10,6 +10,7 @@ func main() {
 	fmt.Println(multiply(5, 5))
 }
 
+<<<<<<< HEAD
 //beginanswer
 func multiply(number1, number2 int) int {
 	result := number1 * number2
@@ -17,3 +18,6 @@ func multiply(number1, number2 int) int {
 }
 
 //endanswer
+=======
+// TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9

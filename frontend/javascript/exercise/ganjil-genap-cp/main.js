@@ -9,6 +9,7 @@ Setiap plat nomer di pisahkan oleh karakter ";"
 */
 
 function ganjilGenap(plat) {
+<<<<<<< HEAD
   //beginanswer
   if (plat === undefined) {
     return `invalid data`
@@ -44,6 +45,9 @@ function ganjilGenap(plat) {
     return `plat genap sebanyak ${genap} dan plat ganjil tidak ditemukan`
   }
   //endanswer
+=======
+  // TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 }
 
 console.log(ganjilGenap('2341;3429;864;1309;1276')) //plat genap sebanyak 2 dan plat ganjil sebanyak 3

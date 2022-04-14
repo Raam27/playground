@@ -18,6 +18,7 @@ let programming = {
 // 6. Menggunakan loop, console.log semua key dalam objek pemrograman.
 // 7. Menggunakan loop, console.log semua value dalam objek pemrograman.
 
+<<<<<<< HEAD
 // beginanswer
 // 1
 programming.languages.push("Go");
@@ -51,3 +52,6 @@ for (let key in programming){
   console.log(programming[key]);
 }
 // endanswer
+=======
+// TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9

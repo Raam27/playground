@@ -23,6 +23,7 @@
 
 
 function rotation(matrix) {
+<<<<<<< HEAD
     // beginanswer
     if (matrix === undefined || matrix.length == 0) {
         return "invalid data"
@@ -64,5 +65,11 @@ function swapRightToLeft(matrix) {
     }
 }
 // endanswer
+=======
+    // TODO: answer here
+};
+
+// TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 
 module.exports = rotation

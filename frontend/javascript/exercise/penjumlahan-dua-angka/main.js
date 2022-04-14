@@ -19,6 +19,7 @@
 
 function twoSum(nums, target) {
   // Tulis kode di sini
+<<<<<<< HEAD
   // beginanswer
   const map = {};
 
@@ -32,4 +33,7 @@ function twoSum(nums, target) {
   }
   return null;
   // endanswer
+=======
+  // TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 };

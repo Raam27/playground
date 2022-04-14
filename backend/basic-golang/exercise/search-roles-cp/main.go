@@ -60,6 +60,7 @@ func main() {
 		},
 	}
 
+<<<<<<< HEAD
 	//beginanswer
 	var searchResult []User
 	var role string
@@ -81,4 +82,7 @@ func main() {
 		fmt.Printf("Role: %v Not Found!", role)
 	}
 	//endanswer
+=======
+	// TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 }

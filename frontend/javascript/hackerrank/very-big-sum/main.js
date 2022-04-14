@@ -13,6 +13,7 @@
 
 function aVeryBigSum(ar) {
   // Complete this function
+<<<<<<< HEAD
   //beginanswer
   let sum = 0;
     for (var i = 0; i < ar.length; i++) {
@@ -20,6 +21,9 @@ function aVeryBigSum(ar) {
     }
     return sum;
   //endanswer
+=======
+  // TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 }
 
 function main() {

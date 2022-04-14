@@ -12,6 +12,7 @@ type Todos struct {
 }
 
 func (todos *Todos) Add(item Item) {
+<<<<<<< HEAD
 	//beginanswer
 	todos.items = append(todos.items, item)
 	//endanswer
@@ -33,6 +34,17 @@ func (todos *Todos) GetUpcoming() []Item {
 	}
 	return upcoming
 	//endanswer return []Item{}
+=======
+	// TODO: answer here
+}
+
+func (todos *Todos) GetAll() []Item {
+	return []Item{} // TODO: replace this
+}
+
+func (todos *Todos) GetUpcoming() []Item {
+	return []Item{} // TODO: replace this
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 }
 
 func NewItem(title string, deadline time.Time) Item {

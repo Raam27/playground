@@ -12,6 +12,7 @@
 
 function staircase(n) {
   // Write your code here
+<<<<<<< HEAD
   //beginanswer
   var stair = [];
   var count = 0;
@@ -31,6 +32,9 @@ function staircase(n) {
   // console.log(stair.join('\n'));
   return stair.join('\n')
   //endanswer
+=======
+  // TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 }
 
 function main() {

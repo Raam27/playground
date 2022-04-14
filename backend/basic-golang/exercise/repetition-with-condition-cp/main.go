@@ -38,6 +38,7 @@ func main() {
 	fmt.Printf("Masukkan jumlah antrian : ")
 	fmt.Scan(&sizeQueue)
 
+<<<<<<< HEAD
 	//beginanswer
 	for i := 1; i <= sizeQueue; i++ {
 		if i < 6 {
@@ -49,4 +50,7 @@ func main() {
 		}
 	}
 	//endanswer
+=======
+	// TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 }
