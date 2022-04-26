@@ -5,7 +5,9 @@ import "sync"
 //gunakan channel untuk memberpaiki masalah race condition!
 func counter(output chan<- int) {
 
-	// TODO: answer here
+	//beginanswer
+	c := make(chan int)
+	//endanswer
 
 	var wg sync.WaitGroup
 	count := 0
@@ -13,12 +15,21 @@ func counter(output chan<- int) {
 		wg.Add(1)
 		go func() {
 			//kirim 1 ke channel
-			// TODO: answer here
+			//beginanswer
+			c <- 1
+			//endanswer
 		}()
 	}
 	//mengubah nilai count menggunakan data dari channel
 
-	// TODO: answer here
+	//beginanswer
+	go func() {
+		for {
+			count += <-c
+			wg.Done()
+		}
+	}()
+	//endanswer
 	wg.Wait() // menunggu seluruh goroutine selesai berjalan
 	output <- count
 }

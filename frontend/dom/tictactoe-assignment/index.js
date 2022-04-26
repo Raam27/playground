@@ -8,7 +8,10 @@ let winningCount = {
 
 //render scoreboard on x-wins and o-wins <label/>
 function renderScore() {
-    // TODO: answer here
+    //beginanswer
+    document.getElementById("x-wins").textContent = winningCount["X"];
+    document.getElementById("o-wins").textContent = winningCount["O"];
+    //endanswer
 }
 
 //check who the winner is, add the score to the scoreboard, and render the scoreboard
@@ -59,7 +62,9 @@ function checkNoWinner() {
     for (let i = 0; i < SIZE; i++) {
         for (let j = 0; j < SIZE; j++) {
             if (getValue(i, j) == "") {
-                // TODO: answer here
+                //beginanswer
+                return false;
+                //endanswer
             }
         }
     }
@@ -72,9 +77,13 @@ function click(event) {
     this.textContent = turn;
 
     if (turn == "X") {
-        // TODO: answer here
+        //beginanswer
+        turn = "O";
+        //endanswer
     } else {
-        // TODO: answer here
+        //beginanswer
+        turn = "X";
+        //endanswer
     }
 
     checkWinner()
@@ -103,7 +112,9 @@ function generate() {
             let button = document.createElement("button");
             button.style.width = BUTTON_SIZE;
             button.style.height = BUTTON_SIZE;
-            // TODO: answer here
+            //beginanswer
+            button.onclick = click;
+            //endanswer
             button.id = i + "-" + j;
 
             td.appendChild(button);
