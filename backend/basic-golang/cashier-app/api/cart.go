@@ -23,6 +23,7 @@ type CartListSuccessResponse struct {
 }
 
 func (api *API) addToCart(w http.ResponseWriter, req *http.Request) {
+	api.AllowOrigin(w, req)
 	productName := req.URL.Query().Get("product_name")
 	encoder := json.NewEncoder(w)
 
@@ -53,17 +54,12 @@ func (api *API) addToCart(w http.ResponseWriter, req *http.Request) {
 }
 
 func (api *API) clearCart(w http.ResponseWriter, req *http.Request) {
+	api.AllowOrigin(w, req)
 	err := api.cartItemRepo.ResetCartItems()
 	encoder := json.NewEncoder(w)
 	defer func() {
 		if err != nil {
-<<<<<<< HEAD
-			//beginanswer
-			w.WriteHeader(http.StatusBadRequest)
-			//endanswer
-=======
 			// TODO: answer here
->>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 			encoder.Encode(CartErrorResponse{Error: err.Error()})
 		}
 	}()
@@ -72,6 +68,7 @@ func (api *API) clearCart(w http.ResponseWriter, req *http.Request) {
 }
 
 func (api *API) cartList(w http.ResponseWriter, req *http.Request) {
+	api.AllowOrigin(w, req)
 	cartItems, err := api.cartItemRepo.SelectAll()
 	encoder := json.NewEncoder(w)
 	defer func() {
