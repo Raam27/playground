@@ -2,7 +2,6 @@ package api
 
 import (
 	"encoding/json"
-	"fmt"
 	"net/http"
 )
 
@@ -21,7 +20,14 @@ type ProductListSuccessResponse struct {
 }
 
 func (api *API) productList(w http.ResponseWriter, req *http.Request) {
+	api.AllowOrigin(w, req)
 	encoder := json.NewEncoder(w)
+	// _, err := api.AuthMiddleWare(w, req)
+	// if err != nil {
+	// 	w.WriteHeader(http.StatusUnauthorized)
+	// 	encoder.Encode(ProductListErrorResponse{Error: err.Error()})
+	// 	return
+	// }
 
 	response := ProductListSuccessResponse{}
 	response.Products = make([]Product, 0)
@@ -38,21 +44,7 @@ func (api *API) productList(w http.ResponseWriter, req *http.Request) {
 		return
 	}
 
-	fmt.Println(products)
+	// fmt.Println(products)
 
-<<<<<<< HEAD
-	//beginanswer
-	for _, product := range products {
-		response.Products = append(response.Products, Product{
-			Name:     product.ProductName,
-			Price:    product.Price,
-			Category: product.Category,
-		})
-	}
-
-	encoder.Encode(response)
-	//endanswer encoder.Encode(ProductListSuccessResponse{Products: []Product{}})
-=======
 	encoder.Encode(ProductListSuccessResponse{Products: []Product{}}) // TODO: replace this
->>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 }
