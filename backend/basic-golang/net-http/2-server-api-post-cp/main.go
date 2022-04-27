@@ -55,7 +55,28 @@ func TablesHandler(w http.ResponseWriter, r *http.Request) {
 
 	// logic handle POST request
 	if r.Method == "POST" {
+<<<<<<< HEAD
+		//beginanswer
+		var ts []Table
+
+		body, err := ioutil.ReadAll(r.Body)
+		if err != nil {
+			http.Error(w, fmt.Sprint("read body error: ", err.Error()), http.StatusInternalServerError)
+			return
+		}
+
+		// decode body JSON request kedalam struct Table variable `ts`
+		err = json.Unmarshal(body, &ts)
+		if err != nil {
+			http.Error(w, fmt.Sprint("JSON encode error: ", err.Error()), http.StatusInternalServerError)
+			return
+		}
+		data = append(data, ts...)
+
+		//endanswer
+=======
 		// TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 
 		// set header response code with status created/201
 		w.WriteHeader(http.StatusCreated)

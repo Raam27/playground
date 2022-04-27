@@ -22,5 +22,24 @@ type Leaderboard struct {
 
 func ExecuteToByteBuffer(leaderboard Leaderboard) ([]byte, error) {
 	var textTemplate string
+<<<<<<< HEAD
+	//beginanswer
+	textTemplate = `{{ range .Users }}Peringkat ke-{{ .Rank }}: {{ .Name }}{{ end }}`
+
+	tmpl, err := template.New("leaderboard").Parse(textTemplate)
+	if err != nil {
+		return nil, err
+	}
+
+	var b bytes.Buffer
+	err = tmpl.Execute(&b, leaderboard)
+	if err != nil {
+		return nil, err
+	}
+
+	return b.Bytes(), nil
+	//endanswer
+=======
 	// TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 }

@@ -23,5 +23,35 @@ func main() {
 	fmt.Print("Size: ")
 	fmt.Scanf("%d", &size)
 
+<<<<<<< HEAD
+	//beginanswer
+	var i, j, k, l int
+	for i = size; i > 0; i-- {
+		for j = 1; j <= i; j++ {
+			fmt.Printf(" ")
+		}
+		for k = size; k > i-1; k-- {
+			fmt.Printf("*")
+		}
+		for l = size; l > i; l-- {
+			fmt.Printf("*")
+		}
+		fmt.Printf("\n")
+	}
+	for i = 0; i <= size; i++ {
+		for j = 1; j <= i; j++ {
+			fmt.Printf(" ")
+		}
+		for k = size; k > i-1; k-- {
+			fmt.Printf("*")
+		}
+		for l = size; l > i; l-- {
+			fmt.Printf("*")
+		}
+		fmt.Printf("\n")
+	}
+	//endanswer
+=======
 	// TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 }

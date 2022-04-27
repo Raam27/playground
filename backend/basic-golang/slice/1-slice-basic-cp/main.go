@@ -10,5 +10,15 @@ import "fmt"
 // Contoh [Zein Fahrozi]
 // Outputkan jawabannya ya pastikan cap dan len nya adalah 2
 func main() {
+<<<<<<< HEAD
+	//beginanswer
+	var slice []string
+	slice = append(slice, "Zein")
+	slice = append(slice, "Fahrozi")
+	fmt.Println(slice)
+	fmt.Println(cap(slice), len(slice))
+	//endanswer
+=======
 	// TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 }

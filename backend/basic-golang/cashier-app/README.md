@@ -9,6 +9,18 @@
 
 
 
+<<<<<<< HEAD
+<!-- beginanswer -->
+
+## For Instructors only
+
+Important, please watch the following video:
+
+[![Instructor Video](https://img.youtube.com/vi/ZIrUdOetQ3g/maxresdefault.jpg)](https://youtu.be/ZIrUdOetQ3g)
+
+<!-- endanswer nop -->
+=======
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 ## 3 modes
 
 ### Terminal Mode

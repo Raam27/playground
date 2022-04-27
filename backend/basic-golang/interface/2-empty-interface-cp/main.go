@@ -11,7 +11,25 @@ import "fmt"
 func GetMenu() []map[string]interface{} {
 	var menu []map[string]interface{}
 
+<<<<<<< HEAD
+	//beginanswer
+	ayamGoreng := make(map[string]interface{})
+	ayamGoreng["Nama"] = "Ayam Goreng"
+	ayamGoreng["Jenis"] = "Cepat saji"
+	ayamGoreng["Harga"] = 20000
+
+	menu = append(menu, ayamGoreng)
+
+	cola := make(map[string]interface{})
+	cola["Nama"] = "Cola"
+	cola["Jenis"] = "Minuman"
+	cola["Harga"] = 7000
+
+	menu = append(menu, cola)
+	//endanswer
+=======
 	// TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 
 	return menu
 }

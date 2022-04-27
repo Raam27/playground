@@ -136,6 +136,10 @@ dist
 
 *.ans
 
+<<<<<<< HEAD
+cypress/videos
+cypress/screenshots
+=======
 english-words.csv
 english-definition.csv
 cypress/videos
@@ -144,3 +148,4 @@ cypress/screenshots
 # grader
 grader-config.json
 grader-cli
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9

@@ -1,12 +1,16 @@
 /**
- * Jumlahkan semua elemen angka dalam sebuah array
+ * Hitung berapa banyak pengulangan angka dari array berikut dan kembalikan dalam bentuk key-value
  * Contoh:
- *  Input: [1, 1, 1, 5]
- *  Output: 8
+ *  Input: [1, 1, 1, 5, 5, 10, 9]
+ *  Output: {1: 3, 5: 2, 10: 1, 9: 1}
+ *
  */
 
-const sumTotalArray = (numbers) => {
-  // TODO: answer here
+ const countRepetition = (numbers) => {
+  //beginanswer
+  const total = numbers.reduce((previous, current) => previous + current);
+  return total;
+  //endanswer
 };
 
-module.exports = sumTotalArray
+module.exports = countRepetition

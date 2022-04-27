@@ -20,7 +20,49 @@ import (
 
 func encryption(s string) string {
 	// Write your code here
+<<<<<<< HEAD
+	//beginanswer
+	root := math.Sqrt(float64(len(s)))
+	width := int(math.Ceil(root))
+	height := int(math.Floor(root))
+	if width*height < len(s) {
+		height++
+	}
+
+	m := make([][]rune, height)
+	for i := range m {
+		m[i] = make([]rune, width)
+	}
+
+	x := 0
+	y := 0
+	for _, c := range s {
+		m[y][x] = c
+		if x == width-1 {
+			x = 0
+			y++
+		} else {
+			x++
+		}
+	}
+
+	var result strings.Builder
+	for i := 0; i < width; i++ {
+		for j := 0; j < height; j++ {
+			if m[j][i] != 0 {
+				result.WriteRune(m[j][i])
+			}
+		}
+		if i != width-1 {
+			result.WriteString(" ")
+		}
+	}
+
+	return result.String()
+	//endanswer return ""
+=======
 	return "" // TODO: replace this
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 }
 
 func main() {

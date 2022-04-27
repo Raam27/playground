@@ -171,13 +171,52 @@ var quotes = [
 	}
 ];
 
+<<<<<<< HEAD
+//beginanswer
+let quote = document.getElementById('random-quote')
+let author = document.getElementsByClassName('author')[0]
+let citation = document.getElementsByClassName('citation')[0]
+let year = document.getElementsByClassName('year')[0]
+let button = document.getElementsByClassName('btn-generate')[0]
+
+displayQuote()
+button.addEventListener('click', displayQuote)
+//endanswer
+
+function getQuote() {
+	//beginanswer
+	let index = Math.floor(Math.random() * quotes.length)
+	return quotes[index]
+	//endanswer
+=======
 // TODO: answer here
 
 function getQuote() {
 	// TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 }
 
 
 function displayQuote() {
+<<<<<<< HEAD
+	//beginanswer
+	let randomQuote = getQuote()
+	quote.innerText = randomQuote.quote
+	author.innerText = randomQuote.author
+
+	if (randomQuote.citation) {
+		citation.innerHTML = ' ' + randomQuote.quote
+	} else {
+		citation.innerHTML = ''
+	}
+
+	if (randomQuote.year) {
+		year.innerHTML = ' ' + randomQuote.year
+	} else {
+		year.innerHTML = ''
+	}
+	//endanswer
+=======
 	// TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 }

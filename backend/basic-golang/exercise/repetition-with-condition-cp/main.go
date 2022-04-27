@@ -38,5 +38,19 @@ func main() {
 	fmt.Printf("Masukkan jumlah antrian : ")
 	fmt.Scan(&sizeQueue)
 
+<<<<<<< HEAD
+	//beginanswer
+	for i := 1; i <= sizeQueue; i++ {
+		if i < 6 {
+			fmt.Printf("Antrian %d membeli 1kg beras dengan kualitas [SUPER]\n", i)
+		} else if i > 5 && i < 11 {
+			fmt.Printf("Antrian %d membeli 1kg beras dengan kualitas [MEDIUM]\n", i)
+		} else {
+			fmt.Printf("Antrian %d membeli 1kg beras dengan kualitas [LOW]\n", i)
+		}
+	}
+	//endanswer
+=======
 	// TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 }

@@ -20,7 +20,41 @@ Lengkapilah function dengan input kata sandi dan output terjemahannya
 
 
 function terjemahKataSandi(kataSandi) {
+<<<<<<< HEAD
+  //beginanswer
+  var tampung = "";
+
+  for (var i = 0; i < kataSandi.length; i++) {
+    if (kataSandi[i] === "&") {
+      tampung += "";
+    }
+    else if (kataSandi[i] === "%") {
+      tampung += "";
+    }
+    else if (kataSandi[i] === "^") {
+      tampung += "";
+    }
+    else if (kataSandi[i] === "#") {
+      tampung += " ";
+    }
+    else if (kataSandi[i] === "]") {
+      tampung += ",";
+    }
+    else if (kataSandi[i] === "+") {
+      tampung += "A";
+    }
+    else if (kataSandi[i] === " ") {
+      tampung += "E";
+    }
+    else {
+      tampung += kataSandi[i];
+    }
+  }
+  return tampung
+  //endanswer
+=======
   // TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 }
 
 

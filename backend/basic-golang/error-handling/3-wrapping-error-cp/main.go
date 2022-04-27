@@ -22,7 +22,13 @@ func GetAge(data map[string]int, name string) (int, error) {
 func IsEligibleToVaccine(data map[string]int, name string) (bool, error) {
 	age, err := GetAge(data, name)
 	if err != nil {
+<<<<<<< HEAD
+		//beginanswer
+		return false, fmt.Errorf("error in IsEligibleToVaccine, error = %w", err)
+		//endanswer
+=======
 		// TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 	}
 	if age < 15 {
 		return false, nil
@@ -40,6 +46,16 @@ func main() {
 	_, err := IsEligibleToVaccine(data, "Tony")
 	if err != nil {
 		// Coba kalian print pesan error dari error IsEligibleToVaccine dan print pesan error yang dibungkus
+<<<<<<< HEAD
+		//beginanswer
+		fmt.Println(err.Error())
+
+		if errWrap := errors.Unwrap(err); errWrap != nil {
+			fmt.Println(errWrap)
+		}
+		//endanswer
+=======
 		// TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 	}
 }

@@ -18,7 +18,37 @@ type Table struct {
 }
 
 func viewTable(w http.ResponseWriter, r *http.Request) {
+<<<<<<< HEAD
+	//beginanswer
+	var t Table
+	id := r.FormValue("id")
+	filepath := path.Join("./views", "index.html")
+	tmpl, err := template.ParseFiles(filepath)
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
+
+	for _, d := range data {
+		if d.ID == id {
+			t = d
+			break
+		}
+	}
+
+	data := map[string]interface{}{
+		"title": "Ruangguru Kampus Merdeka",
+		"table": t,
+	}
+
+	err = tmpl.Execute(w, data)
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+	}
+	//endanswer
+=======
 	// TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 }
 
 var data = []Table{

@@ -25,6 +25,26 @@ func main() {
 	fmt.Printf("Masukkan nilai mahasiswa : ")
 	fmt.Scan(&point)
 
+<<<<<<< HEAD
+	//beginanswer
+	if point > 100 {
+		fmt.Printf("Nilai tidak boleh lebih dari 100")
+	} else if point < 0 {
+		fmt.Printf("Nilai tidak boleh kurang dari 0")
+	} else {
+		if point == 100 {
+			fmt.Printf("Lulus dengan nilai sempurna")
+		} else if point > 70 {
+			fmt.Printf("Lulus")
+		} else if point == 65 {
+			fmt.Printf("Hampir Lulus")
+		} else {
+			fmt.Printf("Tidak lulus!. nilai anda: %d", point)
+		}
+	}
+	//endanswer
+=======
 	// TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 
 }

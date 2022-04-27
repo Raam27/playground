@@ -13,5 +13,11 @@ func main() {
 		71, 84, 85, 87, 19, 20, 61, 24, 56, 51,
 		7, 15, 85, 19, 20, 61, 24, 56, 51,
 	}
+<<<<<<< HEAD
+	//beginanswer
+	fmt.Println(array[len(array)-1])
+	//endanswer
+=======
 	// TODO: answer here
+>>>>>>> 6a266f35b3e5d854980b80d4d6208d897f7008b9
 }
